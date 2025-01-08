@@ -97,3 +97,42 @@ Ensure that you follow the list of [theme store requirements](https://shopify.de
 ## License
 
 Copyright (c) 2021-present Shopify Inc. See [LICENSE](/LICENSE.md) for further details.
+
+
+# <FONT COLOR="#00DD00">CLI3 theme dev command for use</FONT>
+- shopify version ( Current Shopify CLI version: 3.57.0 )
+- Node -v ( v20.11.1 )
+
+````
+    shopify theme dev --store=jsmcavady-tutorials.myshopify.com -x="*.scss" -x="*.sass" -x="*.map"
+````
+- Run the above to start local development via 127.0.0.1:9292
+
+# <FONT COLOR="#00DD00">sass compile</FONT>
+
+https://sass-lang.com/install/ (Command Line Version)
+</br>
+
+````
+sass --version
+````
+example output - 1.79.4 compiled with dart2js 3.5.3
+
+For sass files ( transitioning to )
+````
+sass --watch scss:assets
+````
+
+For scss files ( legacy )
+````
+sass --watch scss:assets
+````
+These will watch for changes and compile to css and place in the assets folder
+
+# <FONT COLOR="#DD0000"> ALWAYS RUN THEME CHECK </FONT>
+````
+   shopify theme check --output
+````
+- This is to be run on the feature theme before going to live.
+- Helps with deprecations and errors making it to live sites.
+
